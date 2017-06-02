@@ -7,6 +7,7 @@ package rest;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import javax.ejb.Stateless;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
@@ -25,6 +26,7 @@ import org.joda.time.DateTimeZone;
  *
  * @author cmora
  */
+@Stateless
 @Path("/time")
 public class Time {
 

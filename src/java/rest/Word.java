@@ -7,6 +7,7 @@ package rest;
 
 
 import java.util.regex.*;
+import javax.ejb.Stateless;
 import javax.json.JsonObject;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
@@ -23,6 +24,7 @@ import org.codehaus.jettison.json.JSONObject;
  *
  * @author cmora
  */
+@Stateless
 @Path("/word")
 public class Word {
 
